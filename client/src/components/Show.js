@@ -1,6 +1,7 @@
 import React from 'react';
 import { connect } from 'react-redux';
 import SingleItem from './SingleItem';
+import selectItems from '../selectors/items';
 
 const Show = (props) => {
     return (
@@ -19,7 +20,7 @@ const Show = (props) => {
 
 const mapStateToProps = (state) => {
     return {
-        items: state.items
+        items: selectItems(state.items, state.filters)
     };
 };
 

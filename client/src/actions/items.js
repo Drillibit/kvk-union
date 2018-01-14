@@ -57,7 +57,6 @@ export const startEditItem = (_id, updates) => {
             description: updates.description,
             image: updates.image
         };
-        console.log(item);
         const dataForm = new FormData();
         dataForm.append('name', updates.name);
         dataForm.append('price', updates.price);

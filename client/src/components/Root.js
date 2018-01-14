@@ -1,15 +1,12 @@
 import React from 'react'; 
 import Show from './Show';
-import Footer from './Footer';
-
-import '../styles/card.scss';
+import Filter from './Filter';
 
 const Root = (props) => {
   return (
-    <div className="landing">
-      <h1>Добро пожаловать</h1>
+    <div>
+      <Filter />
       <Show />
-      <Footer />
     </div> 
   );
 }

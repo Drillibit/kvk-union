@@ -11,7 +11,7 @@ const app = express();
 
 
 mongoose.Promise = global.Promise;
-mongoose.connect(process.env.MONGO_URI, { useMongoClient: true })
+mongoose.connect('mongodb://kvk-admin:293344asd@ds129926.mlab.com:29926/kvk-union', { useMongoClient: true })
     .then(() => console.log('MongoDB connected...'))
     .catch(err => console.log(err));
 

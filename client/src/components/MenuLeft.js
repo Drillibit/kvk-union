@@ -1,12 +1,12 @@
 import React from 'react';
 import { connect } from 'react-redux';
 import { Link } from 'react-router-dom';
-import Filter from './Filter';
+// import Filter from './Filter';
 
 const MenuLeft = (props) => {
     return (
         <div>
-            <Filter />
+            {/* <Filter /> */}
             <ul id="dropdown1" className="dropdown-content">
                 {props.items.map((item) => {
                     return (<li key={item._id}><Link to={{

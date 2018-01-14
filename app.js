@@ -5,7 +5,6 @@ const bodyParser = require('body-parser');
 const fs = require('fs');
 const multer = require('multer');
 
-const keys = require('./config/keys');
 
 const app = express();
 
